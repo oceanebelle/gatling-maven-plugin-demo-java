@@ -3,8 +3,6 @@ package computerdatabase;
 import static io.gatling.javaapi.core.CoreDsl.*;
 import static io.gatling.javaapi.http.HttpDsl.*;
 
-import com.redis.S;
-
 import io.gatling.javaapi.core.*;
 import io.gatling.javaapi.http.*;
 
@@ -13,7 +11,7 @@ public class MyFirstScenario extends Simulation {
     // Define the HTTP configuration and base URL
     HttpProtocolBuilder httpProtocol = http.baseUrl("https://videogamedb.uk/api")
             .acceptHeader("application/json");
-    
+
     ChainBuilder fetchAllVideos = exec(
         http("Get All videos").get("/videogame")
             .check(

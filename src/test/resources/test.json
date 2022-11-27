@@ -1,0 +1,14 @@
+[
+    {
+        "gameid" : 1,
+        "name": "first"
+    },
+    {
+        "gameid" : 2,
+        "name": "second"
+    },
+    {
+        "gameid" : 3,
+        "name": "third"
+    }
+]
